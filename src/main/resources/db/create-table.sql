@@ -1,0 +1,7 @@
+CREATE TABLE users (
+  email  VARCHAR(254) PRIMARY KEY,
+  passwordHash VARCHAR(65) NOT NULL,
+  token VARCHAR(65) NULL,
+  active BOOL NOT NULL DEFAULT 0,
+  deleted BOOL NOT NULL DEFAULT 0
+);
